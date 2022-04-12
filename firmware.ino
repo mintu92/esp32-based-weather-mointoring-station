@@ -1,14 +1,13 @@
+#include <WiFi.h>
+#include <ESPAsyncWebServer.h>
+#include <SPIFFS.h>
+#include "DHT.h"
+#include <Wire.h>
+#include <Adafruit_BMP280.h>
 
-  #include <WiFi.h>
-  #include <ESPAsyncWebServer.h>
-  #include <SPIFFS.h>
-  #include "DHT.h"
-  #include <Wire.h>
-  #include <Adafruit_BMP280.h>
-
-  #define DHTPIN 2
-  #define DHTTYPE DHT11
-  Adafruit_BMP280 bmp;
+#define DHTPIN 2
+#define DHTTYPE DHT11
+Adafruit_BMP280 bmp;
 
 const int windpin = 34;
 const int pressurepin = 39;
